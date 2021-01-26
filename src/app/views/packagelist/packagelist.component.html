@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Description</th>
+            <th scope="col">Weight</th>
+            <th scope="col">PriceToPay</th>
+            <th scope="col">Courier</th>
+            <th scope="col">Courier Tracking</th>
+            <th scope="col">Internal Tracking</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let package of packages">
+            <th>{{package.description}}</th>
+            <td>{{package.weight}}</td>
+            <td>{{package.priceToPay}}</td>
+            <td>{{package.courier}}</td>
+            <td>{{package.courierTracking}}</td>
+            <td>{{package.internalTracking}}</td>
+        </tr>
+    </tbody>
+</table>
